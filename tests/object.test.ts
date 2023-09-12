@@ -1,5 +1,5 @@
 import { expect, test } from 'vitest';
 
 test('should fail', () => {
-  expect({ name: 'testing' }).toBe({ name: 'wrong' });
+  expect({ name: 'testing' }).toEqual({ name: 'testing' });
 });

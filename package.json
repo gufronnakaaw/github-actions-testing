@@ -4,12 +4,19 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "vitest run"
+    "test": "vitest run",
+    "build": "npx tsc",
+    "start": "node ./build/app.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@types/node": "^20.6.0",
+    "typescript": "^5.2.2",
     "vitest": "^0.34.4"
+  },
+  "dependencies": {
+    "fastify": "^4.23.0"
   }
 }
