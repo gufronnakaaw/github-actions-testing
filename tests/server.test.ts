@@ -9,3 +9,12 @@ test('should can get data', async () => {
 
   expect(response.json().message).toBe('hello world!');
 });
+
+test('should can get data cd', async () => {
+  const response = await server.inject({
+    method: 'GET',
+    url: '/cd',
+  });
+
+  expect(response.json().message).toBe('hello CD!');
+});

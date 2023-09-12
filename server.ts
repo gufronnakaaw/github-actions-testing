@@ -8,4 +8,10 @@ server.get('/', () => {
   };
 });
 
+server.get('/cd', () => {
+  return {
+    message: 'hello CD!',
+  };
+});
+
 export default server;
