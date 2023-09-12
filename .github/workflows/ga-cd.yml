@@ -31,4 +31,3 @@ jobs:
             git status
             npm install
             npm run build
-            npm start
